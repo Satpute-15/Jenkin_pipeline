@@ -4,6 +4,7 @@ pipeline{
     stages{
         stage('compile'){
             steps{
+                echo "printing java program"
             sh 'javac Demo.java'
             }
 
