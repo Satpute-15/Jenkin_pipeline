@@ -3,14 +3,14 @@ pipeline{
     
     stages{
         stage("compile"){
-            step{
+            steps{
             sh 'javac Demo.java'
             }
 
         }
     
         stage("run"){
-            step{
+            steps{
             sh 'java Demo'
             }
 
