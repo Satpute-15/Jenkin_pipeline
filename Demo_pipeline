@@ -1,11 +1,15 @@
 pipeline{
     agent any
+    environment{
+        VERSION_NAME="1.3.4"
+    }
     
     stages{
         stage('compile'){
             steps{
                 echo "printing java program"
                 echo "Ankit running pipelibe"
+               sh 'echo "${VERSION_NAME}"'
             sh "javac Demo.java"
             }
 
